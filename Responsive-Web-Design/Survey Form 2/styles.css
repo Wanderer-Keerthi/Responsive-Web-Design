@@ -1,0 +1,23 @@
+body {
+    background-image: url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-position: center;
+  }
+  
+  h1, p {
+    text-align: center;
+    color: #e4e4e4;
+  }
+  
+  .description {
+    font-style: italic;
+  } 
+  
+  label {
+    color: #e4e4e4;
+    display: block;
+    margin: 1em 0;
+  }
+  
+  .checkbox {
+    display: block;
+  }

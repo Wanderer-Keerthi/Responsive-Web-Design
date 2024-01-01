@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p class="description" id="description">Thank you for taking the time to help us improve the platform</p>
+    <form method="post" action='https://register-demo.freecodecamp.org' id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Name <input id="name" type="text" placeholder="Enter your name" required/></label>
+        <label for="email" id="email-label">Email <input id="email" placeholder="Enter your email" type="email" required /></label>
+        <label for="number" id="number-label">Age (optional) <input id="number" placeholder="Age" type="number" min="18" max="120" /></label>
+        <label>Which option best describes your current role?
+          <select id="dropdown">
+            <option value="1">Student</option>
+            <option value="2">Full Time Job</option>
+            <option value="3">Full Time Learner</option>
+            <option value="4">Prefer Not To Say</option>
+            <option value="5">Other</option>
+          </select>
+        </label>
+        <label>Would you recommend freeCodeCamp to a friend?
+          <input type="radio" name="recommend" value="definitely" class="inline" />Definitely<br>
+          <input type="radio" name="recommend" value="maybe" class="inline" />Maybe<br>
+          <input type="radio" name="recommend" value="notsure" class="inline" />Not sure<br>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label class="checkbox">
+          What would you like to see improved? (Check all that apply)<br>
+          <input type="checkbox" value="1">Front-end Projects<br>
+          <input type="checkbox" value="2">Back-end Projects<br>
+          <input type="checkbox" value="3">Data Visualization<br>
+          <input type="checkbox" value="4">Open Source Community
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>Any comments or suggestions?<br>
+          <textarea id="comment" rows="3" cols="30" placeholder="Enter your comment here..."></textarea> 
+        </label>
+      </fieldset>
+      <input type="submit" value="submit" id="submit" />
+    </form>
+  </body>
+</html>
